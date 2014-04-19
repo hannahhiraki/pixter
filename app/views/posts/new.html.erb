@@ -1,0 +1,13 @@
+<div class="private-square span5 offset2 text-center">
+  
+  <h1>Upload you DIY image</h1>
+  <br/>
+  <%= simple_form_for @post do |f| %>
+  <%= f.input :title, label: 'What is your DIY Project?', placeholder: 'eg. DIY vase, DIY bedazzled chair, etc.' %>
+  <br/>
+  <%= f.input :description, label: 'How To Make This:', placeholder: 'eg. Supplies, Directions, Tips, etc. '%>
+  <br/>
+  <%= f.button :submit, :class => 'btn btn-info' %>
+  <% end%>
+  
+</div> 
